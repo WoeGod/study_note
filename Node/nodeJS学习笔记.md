@@ -723,13 +723,13 @@ fs.readFile(path.join(__dirname + '/a.txt'),'utf8',function(err,data){
 
 #### 起步
 
-##### 安装：![image-20200310123723079](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20200310123723079.png)
+##### 安装：
 
 ```javascript
 cnpm install express
 ```
 
-##### hello world:![image-20200310124850557](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20200310124850557.png)
+##### hello world:
 
 ```javascript
 // 引入express
