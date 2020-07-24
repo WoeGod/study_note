@@ -44,7 +44,7 @@ function Father(uname, age, sex){
 function Son(uname, age, sex){
   Father.call(this, uname, age, sex);
 }
-var son = new Son('刘德华', 18, '男');
+var son = new Son('周星驰', 18, '男');
 console.log(son)  // { uname: '刘德华', age: 18, sex: '男' } 
 ```
 
@@ -102,3 +102,5 @@ setTimeout(function(){
   this.xxx = xxx //...
 }.bind(this),3000)
 ```
+
+*推荐学习文章：[细说 call、apply 以及 bind 的区别和用法](https://segmentfault.com/a/1190000018017796)*
