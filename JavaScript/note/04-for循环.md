@@ -11,7 +11,7 @@ for (let i = 0; i < arr.length; i++){
 
 # forEach
 优点：语法简洁
-缺点：不能终止或者跳过
+缺点：不能终止或者跳过(其它几种循环都可以)
 ```javascript
 lists = ['apple','banana','pear','watermelon','pineapple']
 
@@ -103,14 +103,40 @@ for (let index in obj){
 此时，`for...in`遍历的只有`obj`对象自身的属性，遍历数组同理
 
 # for...of
+>`for...of`语句在可迭代对象（包括 `Array`，`Map`，`Set`，`String`，`TypedArray`，`arguments` 对象等等）上创建一个迭代循环，调用自定义迭代钩子，并为每个不同属性的值执行语句
 
-优点：可以使用`continue`或`break`进行跳过或终止
-      不会遍历原型继承的属性
-      语法简洁
+语法：
 ```javascript
-lists = ['apple','banana','pear','watermelon','pineapple']
-
-for (let list of lists){
-  console.log(list);  // apple banana pear watermelon pineapple
+for (variable of iterable) {
+    //statements
 }
 ```
+## 迭代`Array`
+```javascript
+let iterable = [10, 20, 30];
+
+for (let value of iterable) {
+    value += 1;
+    console.log(value);
+}
+// 11
+// 21
+// 31
+```
+如果你不想修改语句块中的变量 , 也可以使用`const`代替`let`。
+```javascript
+let iterable = [10, 20, 30];
+
+for (const value of iterable) {
+  console.log(value);
+}
+// 10
+// 20
+// 30
+```
+# `for...of`与`for...in`的区别
+无论是`for...in`还是`for...of`语句都是迭代一些东西。它们之间的主要区别在于它们的迭代方式。
+
+`for...in` 语句以任意顺序迭代对象的可枚举属性。
+
+`for...of` 语句遍历可迭代对象定义要迭代的数据。
