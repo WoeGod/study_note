@@ -1,0 +1,23 @@
+{
+	"打印输出(蓝色)": {
+		"prefix": "blog",
+		"body": [
+			"console.log('%c $2 ', 'color: white; background-color: #2274A5',$1)"
+		],
+		"description": "打印输出(蓝色)"
+	},
+	"打印输出(红色)": {
+		"prefix": "rlog",
+		"body": [
+			"console.log('%c $2 ', 'color: white; background-color: #f1404b',$1)"
+		],
+		"description": "打印输出(红色)"
+	},
+	"打印输出(绿色)": {
+		"prefix": "glog",
+		"body": [
+			"console.log('%c $2 ', 'color: white; background-color: #00a03e',$1)"
+		],
+		"description": "打印输出(绿色)"
+	}
+}
