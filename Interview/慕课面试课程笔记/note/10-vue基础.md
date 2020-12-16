@@ -140,7 +140,7 @@ export default {
 ## 表单
  - `v-model`
  - 常见的表单项 `textarea` `checkbox` `radio` `select` 
- - 修饰符 `lazy` `number` `trum`
+ - 修饰符 `lazy` `number` `trim`
 
 # `Vue-router`
 

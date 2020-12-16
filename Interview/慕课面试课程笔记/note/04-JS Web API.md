@@ -68,7 +68,7 @@ setAttribute()|	把指定属性设置或修改为指定的值。
 
 - `property` : 是有类型的，例如`Bollean`，`number`，`string`等
 - `attribute`: 只能是`string`，而没有其他类型
-- 两者都有肯引起`DOM`渲染
+- 两者都有可能引起`DOM`渲染
 
 ## `DOM`性能
   - `DOM`操作非常“昂贵”，避免频繁的`DOM`操作

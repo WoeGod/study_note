@@ -7,6 +7,9 @@
 
 ### 4. 手写深拷贝
 
+### 5. javascript常用事件有哪些
+
+
 ## 原型和原型链
 
 ### 1. 如何准确判断一个变量是不是数组
@@ -158,10 +161,11 @@ async function async1 (){
   console.log('async1 end')  
 }
 
-async function async2 (){
-  console.log('async2') 
+async function async2 () {
+  console.log('async2')
+}
 
-console.log('script start') 
+console.log('script start')  
 
 setTimeout(function (){ 
   console.log('setTimeout')  
@@ -190,7 +194,7 @@ console.log('script end')
 [手写前端面试代码题](https://mp.weixin.qq.com/s/yezSucSCcTK-cFSDNVz8uA)
 ### 1. `typeof`能判断哪些类型？
  - 能判断值类型、函数、能识别引用类型(不能再继续识别)
-
+ - `console.log(typeof null)` // object
 >JavaScript 中共有6 种基本数据类型： `Undefined` 、 `Null` 、 `Boolean` 、 `Number` 、 `String` 、 `Symbol` (new in ES 6) 
 >
 > 引用数据类型：对象(`Object`)、数组(`Array`)、函数(`Function`)。
@@ -252,6 +256,42 @@ function deepClone (obj = {}){
      - `undefined`,`NaN`, `-Infinity`, `Infinity` 都会被转化成`null`
      - `RegExp`/函数不会拷贝
      - `new Date()`会被转成字符串
+
+### 5. javascript常用事件有哪些
+1、 `onLoad` ：当页面加载完毕后触发，常用于`body`元素
+
+2、 `onUnload` ：当页面关闭后触发，常用于`body`元素
+
+3、 `onBlur` ：当失去焦点时触发，常用于`input`表单元素
+
+4、 `onFocus` ：当获得焦点时触发，常用于`input`表单元素
+
+5、 `onClick` ：当点击时触发，可以用于任何元素
+
+6、 `onMouseOver` ：当鼠标悬浮时触发
+
+7、 `onMouseOut` ：当鼠标离开时触发
+
+8、 `onMouseDown` ：当鼠标按下时触发
+
+9、 `onMouseUp` ：当鼠标弹起时触发
+
+10、 `onMouseMove` ：当鼠标移动时触发
+
+11、 `onChange` ：当状态改变时触发，常用于`select`下拉选框
+
+12、 `onSelect` ：当文本框中的文本选中时触发
+
+13、 `onkeypress` ：当键盘按下时触发（要快于`onkeydown`）
+
+14、 `onkeydown` ：当键盘按下时触发（可能捕获功能键，如上下左右）
+
+15、 `onkeyup` ：当键盘弹起时触发
+
+16、 `onSubmit` ：当表单提交时触发，常用于form表单元素
+
+17、 `onReset` ：当表单重置时触发，常用于form表单元素
+
 ## 原型和原型链
 - 原型关系
   - 每个`class`都有显式原型`prototype`
@@ -361,7 +401,7 @@ for (i = 0; i < 10; i++) {
 
 ## 异步和单线程
 ### 1. 同步和异步的区别是什么？
-  - 基于JS是单线程音乐
+  - 基于JS是单线程语言
   - 异步不会阻塞代码执行
   - 同步会阻塞代码执行
 ### 2. 手写用`Promise`加载一张图片
