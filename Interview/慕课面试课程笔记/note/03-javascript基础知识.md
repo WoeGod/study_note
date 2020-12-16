@@ -74,7 +74,6 @@ for (i = 0; i < 10; i++) {
 
 ### 3. 前端使用异步的场景有哪些
 
-
 ### 4. Promise
 ```JavaScript
 // 第一题 
@@ -133,8 +132,9 @@ async function fn(){
 ```
 
 ### 宏任务和微任务
- - 宏任务有哪些？
- - 微任务有哪些？
+#### 1. 请描述`event loop`(事件循环/事件轮询)的机制，可画图
+#### 2. 什么是宏任务和微任务，两者有什么区别
+#### 3. `Promise`有哪三种状态？如何变化？
 #### 题目一
 
 ```javascript
@@ -432,11 +432,20 @@ async function fn(){
 ```
 
 ### 宏任务和微任务
+#### 1. 请描述`event loop`(事件循环/事件轮询)的机制，可画图
+
+#### 2. 什么是宏任务和微任务，两者有什么区别
  - 宏任务有哪些？
  - 微任务有哪些？
    - 宏任务: `setTimeout`,`setInterval`,`Ajax`,`DOM`事件
    - 微任务: `Promise`, `async/await`
    - 微任务触发时机比宏任务更早(微任务在`DOM`渲染之前触发，宏任务在`DOM`渲染之后触发)
+
+#### 3. `Promise`有哪三种状态？如何变化？
+- 初始化，状态：pending
+- 当调用resolve(成功)，状态：pengding=>fulfilled
+- 当调用reject(失败)，状态：pending=>rejected
+
 
 #### 题目一
 

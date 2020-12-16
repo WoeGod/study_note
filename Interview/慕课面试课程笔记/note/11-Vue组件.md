@@ -1,7 +1,11 @@
 # Vue组件使用
-## `props` 和 `$emit`
 
-## 组件间通讯 - 自定义事件
+### Vue组件如何通讯(常见)
+ - `props` 和 `$emit`
+ - 自定义事件 `event.$on` `event.$off` `event.$emit`
+ - `vuex`
+
+## 描述组件渲染和更新的过程
 
 ## 组件生命周期 
 ![组件生命周期](https://img-blog.csdnimg.cn/20190923140445528.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21hb3l1dXU=,size_16,color_FFFFFF,t_70)
@@ -29,7 +33,11 @@
  - `keep-alive`
  - `mixin`
 
-### 1. 自定义`v-model`
+### 1. 自定义实现一个`v-model`
+ - 实现原理
+   - `input`元素的`value = this.name`(输入框的值)
+   - 绑定`input`事件`this.name = $event.target.value`
+   - `data`更新触发`re-render`
  ```html
 <template>
     <!-- 例如：vue 颜色选择 -->

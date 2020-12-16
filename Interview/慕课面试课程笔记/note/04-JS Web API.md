@@ -1,4 +1,33 @@
 # DOM
+### 1. 'DOM'操作常用的API
+
+### 2. `property` 和 `attribute`的区别
+
+
+## `DOM`性能
+### 1. 一次性插入多个`DOM`节点，考虑性能，怎么办？  
+
+
+## 事件
+
+### 1. 编写一个通用的事件监听函数
+
+### 2. 描述事件冒泡的流程
+
+### 3. 无限下拉的图片列表，如何监听每个图片的点击
+
+## `ajax`
+### 1. 手写一个简易的`ajax`
+
+### 2. 跨域的常用实现方式
+
+
+## 存储
+### 1. 描述`cookie` `localStorage` `sessionStorage`区别
+
+
+# 解析
+# DOM
 ##  'DOM'操作常用的API
 ### 1. [`JS`获取`DOM`元素的方法(8种)](https://www.jianshu.com/p/6fefda57b51f)
 ```javascript
