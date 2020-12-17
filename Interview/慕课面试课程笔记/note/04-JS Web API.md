@@ -40,11 +40,21 @@
  - document.documentElement  // 获取html的方法
  - document.body             // 获取body的方法
 
-
 const div1 = document.getElementById('div1')  // 元素
 const divList = document.getElementsByTagName('div')  // 集合
 const containerList = document.getElementsByClassName('.container') // 集合
 const pList = document.querySelectorAll('p')  // 集合
+```
+
+```javascript
+alert($(window).height());    //浏览器当前窗口可视区域高度 
+alert($(document).height());    //浏览器当前窗口文档的高度 
+alert($(document.body).height());   //浏览器当前窗口文档body的高度 
+alert($(document.body).outerHeight(true));    //浏览器当前窗口文档body的总高度 包括border padding margin 
+alert($(window).width());     //浏览器当前窗口可视区域宽度 
+alert($(document).width());   //浏览器当前窗口文档对象宽度 
+alert($(document.body).width());    //浏览器当前窗口文档body的高度 
+alert($(document.body).outerWidth(true));   //浏览器当前窗口文档body的总宽度 包括border padding margin 
 ```
 ### 2. `DOM`结构操作
  方法	|描述| 
