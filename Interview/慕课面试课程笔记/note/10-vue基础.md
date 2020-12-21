@@ -29,7 +29,7 @@
  - 清除定时器
  - 解绑自定义的`DOM`事件，如 `window scroll` 等
 
-### 10. 生命是作用域插槽
+### 10. 什么是作用域插槽
 
 ### 11. `Vuex`中`action`和`mutation`有何区别
  - `action`中处理异步，`mutation`不可以
