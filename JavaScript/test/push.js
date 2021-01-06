@@ -1,15 +1,8 @@
-　　var name = "The Window";
-
-　　var object = {
-　　　　name : "My Object",
-
-　　　　getNameFunc : function(){
-　　　　　　var that = this;
-　　　　　　return function(){
-　　　　　　　　return that.name;
-　　　　　　};
-
-　　　　}
-
-　　};
-  console.log(object.getNameFunc()()); 
+let arr = {
+  0:3,
+  1:2,
+  3:2
+}
+for(let i in arr){
+  console.log(i);
+}
