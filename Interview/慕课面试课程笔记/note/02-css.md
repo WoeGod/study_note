@@ -84,6 +84,9 @@ p {
 # 其它
 ### `CSS`中哪些样式可继承，哪些不可继承
 
+### `CSS`中可以使元素隐藏的方式有哪些？
+![](https://segmentfault.com/img/bVbbACL?w=855&h=317/view)
+[CSS中用 opacity、visibility、display 属性将 元素隐藏 的 对比分析](https://segmentfault.com/img/bVbbACL?w=855&h=317)
 
 
 
@@ -289,3 +292,7 @@ p {
             }
         }
 ```
+
+### `CSS`中可以使元素隐藏的方式有哪些？
+![](https://segmentfault.com/img/bVbbACL?w=855&h=317/view)
+[CSS中用 opacity、visibility、display 属性将 元素隐藏 的 对比分析](https://segmentfault.com/img/bVbbACL?w=855&h=317)
