@@ -234,5 +234,5 @@ var callbackHandler = function(data) {
   
 - `localStorage` 和 `sessionStorage`的区别
   - `localStorage`数据会永久存储,除非代码手动删除
-  - `sesstionStorage`数据只存在于当前会话,浏览器关闭则清空
+  - `sessionStorage`数据只存在于当前会话,浏览器关闭则清空
   - 一般用`localStorage`会更多一些

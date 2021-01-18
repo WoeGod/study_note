@@ -88,7 +88,7 @@ p {
 ![](https://segmentfault.com/img/bVbbACL?w=855&h=317/view)
 [CSS中用 opacity、visibility、display 属性将 元素隐藏 的 对比分析](https://segmentfault.com/img/bVbbACL?w=855&h=317)
 
-
+### `CSS`多行文字垂直居中实现方法
 
 
 
