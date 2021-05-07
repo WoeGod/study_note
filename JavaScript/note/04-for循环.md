@@ -123,7 +123,9 @@ for (let value of iterable) {
 // 21
 // 31
 ```
+
 如果你不想修改语句块中的变量 , 也可以使用`const`代替`let`。
+
 ```javascript
 let iterable = [10, 20, 30];
 
